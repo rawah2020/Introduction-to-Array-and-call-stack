@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>JS first class</title>
+
+</head>
+
+<body>  
+    <p id="demo1"> </p> 
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+    <p id="demo4"> </p>
+    <p id="demo5"> </p>
+    <p id="demo6"> </p>
+    <script>
+var student={ 
+    studentName:"rawah",
+    studentid:1256, 
+    grade:7 
+
+}; 
+document.write(student.studentName);
+// javascript array//  
+var fruits=['mango' ,'banana' , 'strawberry' ];
+var age=[12,34,56]; 
+document.getElementById("demo1").innerHTML=fruits[1]; 
+document.write(age[2]);  
+
+
+
+// array methods //
+var game=['football' , 'cricket' , 'volleyball'] 
+
+
+
+// how to use methods join// 
+document.getElementById("demo2").innerHTML=game.join("sport") 
+document.getElementById("demo3").innerHTML=game.pop()
+ 
+
+ // js function// 
+ function add(a,b){ 
+    var sum;
+    sum=a+b; 
+    return sum;
+
+ } 
+
+
+ function average(a,b){ 
+var average=add(a,b);  
+average=average/2;
+return average;
+} 
+ var result=average(100,500);
+
+   document.getElementById("demo4").innerHTML=result; 
+
+ 
+
+</script>
+</body>
+
+</html>
